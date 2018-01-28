@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><%- title %></title>
+    <meta name="description" content="<%- description %>"/>
+    <meta property="og:description" content="<%- description %>" />
+    <meta property="og:title" content="<%- title %>" />
+    <meta property="og:type" content="">
+    <meta property="og:url" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <link href="<%- cssFile %>" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      window.__REDUX_STATE__ = <%- reduxState %>;
+    </script>
+  </head>
+  <body>
+    <div id="root"><%- generatedContent %></div>
+    <script type="text/javascript" src="<%- jsFile %>" defer></script>
+  </body>
+</html>
