@@ -177,8 +177,11 @@ module.exports = {
         }
       })
     });
-
-    server.listen(3000, function() {
+    let PORT = 8081;
+    if (process.env.NODE_ENV === 'development') {
+      PORT = 3000;
+    }
+    server.listen(PORT, function() {
       console.log(`Listening at http://localhost:${server.address().port}`);
     });
   }
